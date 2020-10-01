@@ -44,6 +44,10 @@ h6 {
     color: #d1d1d1;
 }
 
+.bold {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /*----- 2.1 | Header -----*/
 
 .active {
