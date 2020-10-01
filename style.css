@@ -1,0 +1,195 @@
+/*
+Kod skriven av John Emericks
+Linnéuniversitet, HT 2020
+*/
+
+/*--------------------
+Struktur:
+1 | Basinställningar
+2.1 | Header
+2.2 | Header - Media Queries
+3 | Grid 
+4 | Fråga 1
+5 | Fråga 2
+6 | Fråga 3
+--------------------*/
+
+/*----- 1 | Basinställningar -----*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',
+        sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #190061;
+}
+
+p,
+b,
+i,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #d1d1d1;
+}
+
+/*----- 2.1 | Header -----*/
+
+.active {
+    opacity: .4;
+}
+
+.navigation {
+    height: 100vmax;
+    width: 50px;
+    padding: 2em;
+    background-color: #0c0032;
+    float: left;
+    position: fixed;
+}
+
+.navigation ul {
+    display: inline-block;
+    width: 50px;
+}
+
+.navigation ul li {
+    padding-bottom: 2em;
+    width: 50px;
+}
+
+.navigation ul li a {
+    color: #3500d3;
+    text-decoration-line: none;
+    font-size: 18pt;
+    transition: font-size .5s;
+}
+
+.navigation ul li a:hover {
+    font-size: 20pt;
+}
+
+.navigation ul li a:hover {
+    color: rgb(76, 0, 255);
+    text-decoration: underline;
+}
+
+
+/*----- 2.2 | Header - Media Queries -----*/
+
+@media only screen and (max-width: 800px) {
+
+    .navigation {
+        min-height: 0;
+        height: 50px;
+        width: 100%;
+        padding: 2em;
+    }
+
+    .navigation ul {
+        width: 100%;
+        display: flex;
+    }
+
+    .navigation ul li {
+        padding-right: 4em;
+        width: 50px;
+    }
+
+    .answers-container {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+
+    #answers {
+        padding-top: 7em;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .answers-container {
+        width: 100% !important;
+    }
+
+}
+
+/*----- 3 | Grid -----*/
+#answers {
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 800px) {
+
+    #answers {
+        padding-left: 6em;
+    }
+
+}
+
+#answers h1 {
+    text-align: center;
+    padding: 1em;
+}
+
+.answers-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #240090;
+    padding: 20px 10px 20px 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.answer {
+    padding: 1em;
+}
+
+.answer h3 {
+    text-align: center;
+    border: #190061 5px solid;
+    background-color: #0c0032;
+    padding: 5px;
+}
+
+.answer h3:hover {
+    transform: scaleX(1.1);
+}
+
+.answer p {
+    text-align: justify;
+}
+
+/*----- 4 | Fråga 1 -----*/
+
+.box-model {
+    width: 100%;
+    margin: 1em 0em 1em 0em;
+}
+
+/*----- 5 | Fråga 2 -----*/
+
+.navigation-type {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*----- 6 | Fråga 3 -----*/
+
+.user-needs {
+    width: 100%;
+    margin-top: 20px;
+}
