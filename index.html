@@ -83,13 +83,13 @@
                     </p>
 
                     <p>
-                        <b>border-box</b> instruerar webbläsaren att räkna in för utfyllnad i de värden man specifierar
-                        för
-                        ett elements storlek. Återigen, sätter man med denna modell ett elements bredd till 100 pixlar
-                        kommer
-                        de 100 pixlarna att inkludera eventuell marginal och utfyllnad och elementets content-box kommer
-                        att sjunka
-                        för att absorbera den extra bredden, vilket ger elementet en exakt storlek.
+                        <b>border-box</b> 
+                        Har en del likheter med content-box men den stora skillnaden är att all addition av padding eller margin
+                        kommer att inneslutas i den bredd man redan angivit. Om exempelvis ett element ska ha en bredd på 500 pixlar och
+                        elementet sen definieras med regeln 'box-sizing:border-box' innebär detta att ifall ytterligare en regel där en 
+                        ram på 5 pixlar ges till elementet så kommer ramen hamna innanför elementets ruta istället för utanför. Detta betyder
+                        att en ram på 5 pixlar ges men elementet behåller sin bredd på 500 pixlar. Sammantaget kan man säga att med border-box kommer 
+                        width att innefatta både border och padding. 
                     </p>
                 </div>
             </div>
